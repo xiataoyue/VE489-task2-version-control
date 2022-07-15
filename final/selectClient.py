@@ -251,7 +251,7 @@ if __name__ == '__main__':
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect((server_host, server_port))
 
-    file = r'C:\Users\JamesXia\Desktop\shakespeare.txt'
+    file = '/home/version control/shakespeare.txt'
     print("Start sending data.")
     sender = Sender(server_host, server_port, file, client_socket)
     ack_checker = ACKChecker(server_host, server_port, file, client_socket)

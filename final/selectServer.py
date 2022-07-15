@@ -62,7 +62,7 @@ def run():
 
     client_host = '192.168.31.42'
     port = 12345
-    filename = '/home/xiataoyue/Desktop/task2.txt'
+    filename = '/home/task2.txt'
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     local_host = socket.gethostname()
     server_socket.bind(("192.168.159.128", port))
